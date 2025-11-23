@@ -11,7 +11,6 @@
   };
   services.openssh.enable = true;
   virtualisation.docker.enable = true;
-  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
   environment.systemPackages = with pkgs; [
     fastfetch
     neovim
