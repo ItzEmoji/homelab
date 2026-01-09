@@ -12,6 +12,7 @@
         specialArgs = { inherit inputs; };
         modules = [
           disko.nixosModules.disko
+          inputs.nix-minecraft.nixosModules.minecraft-servers
           ./configuration.nix
           ./hardware-configuration.nix
         ];
