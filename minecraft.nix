@@ -28,22 +28,15 @@
         Sel_X = "34a3195a-88cf-4da3-bd1c-7b71ed4eb4f6";
         Aleksus401 = "ad541490-a394-4474-83b9-6fee5ae50aef";
       };
+      operators = {
+        ItzEmoji = "9764484a-7e56-4b31-8bb1-91d0f535292a";
+        Sel_X = "34a3195a-88cf-4da3-bd1c-7b71ed4eb4f6";
+      };
+      symlinks = with pkgs; {
+        mods = linkFarmFromDrvs "mods" (builtins.attrValues {
+        worldedit = fetchurl { url = "https://cdn.modrinth.com/data/1u6JkXh5/versions/SisHd23s/worldedit-mod-7.3.18.jar"; sha512 = "683ae6bc80fa61c9b6d2af8897e249bb8bf5b0d934e7ea22f9790fd6c4c86f94fc6fa1ed837d8879b676f56ceedaa02a5627509358ff2e966175740060add2a4"; };
+        });
+      };
     };
   };
-
-  # services.minecraft-server = {
-  #   eula = true;
-  #   dataDir = "/srv/minecraft-server/survival-1.21.10";
-  #   enable = true;
-  #   package = pkgs.fabricServers.fabric-1_21_11;
-  #   serverProperties = {
-  #     white-list = true;
-  #   };
-  #   whitelist = 
-  #   {
-  #       ItzEmoji = "9764484a-7e56-4b31-8bb1-91d0f535292a";
-  #       Sel_X = "34a3195a-88cf-4da3-bd1c-7b71ed4eb4f6";
-  #       Aleksus401 = "ad541490-a394-4474-83b9-6fee5ae50aef";
-  #   };
-  # };
 }
