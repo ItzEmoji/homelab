@@ -11,7 +11,6 @@
     efiSupport = true;
     efiInstallAsRemovable = true;
   };
-  networking.hostName = "server";
   services.openssh.enable = true;
   services.tailscale.enable = true;
   virtualisation.docker.enable = true;
