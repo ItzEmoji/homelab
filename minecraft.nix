@@ -15,6 +15,7 @@
       whitelist = {
         ItzEmoji = "9764484a-7e56-4b31-8bb1-91d0f535292a";
         Sel_X = "34a3195a-88cf-4da3-bd1c-7b71ed4eb4f6";
+        Revandives = "fa6538d1-0046-4ef7-b4af-919b434d956c";
       };
     };
     servers.survival = {
