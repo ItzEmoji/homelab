@@ -18,7 +18,6 @@
         Revandives = "fa6538d1-0046-4ef7-b4af-919b434d956c";
       };
       operators = {
-        
         ItzEmoji = "9764484a-7e56-4b31-8bb1-91d0f535292a";
       }; 
     };
