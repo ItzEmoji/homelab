@@ -1,6 +1,6 @@
 { inputs, self, ... }:
 {
-  flake.nixosConfigurations.homelab = inputs.nixpkgs.lib.nixosSystem {
+  flake.nixosConfigurations.server = inputs.nixpkgs.lib.nixosSystem {
     specialArgs = { inherit inputs self; };
     modules = [
       ./_hardware_configuration.nix
