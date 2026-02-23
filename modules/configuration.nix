@@ -6,6 +6,7 @@
       ./_hardware_configuration.nix
       "${inputs.nixpkgs}/nixos/modules/installer/scan/not-detected.nix"
       "${inputs.nixpkgs}/nixos/modules/profiles/qemu-guest.nix"
+      self.nixosModules.disk-config
       self.nixosModules.nix-config
       self.nixosModules.grub
       self.nixosModules.minecraft
