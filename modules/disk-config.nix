@@ -1,7 +1,7 @@
-{ lib, ... }:
+{ ... }:
 {
   flake.nixosModules.disk-config =
-    { inputs, ... }:
+    { inputs, lib, ... }:
     {
       imports = [
         inputs.disko.nixosModules.disko
