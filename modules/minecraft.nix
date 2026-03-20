@@ -15,7 +15,7 @@
           enable = true;
           serverProperties = {
             white-list = true;
-            server-port = 4000;
+            server-port = 25565;
           };
           package = pkgs.fabricServers.fabric-1_21_11;
           whitelist = {
