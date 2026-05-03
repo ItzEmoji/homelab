@@ -10,7 +10,7 @@
         isSystemUser = true;
         shell = pkgs.bash;
       };
-      users.groups.git = {};
+      users.groups.git = { };
       services.openssh = {
         extraConfig = ''
           Match User git
