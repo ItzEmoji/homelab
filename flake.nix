@@ -11,17 +11,4 @@
   };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);
-  # outputs = { nixpkgs, disko, ...}@inputs:
-  #   {
-  #     nixosConfigurations.server = nixpkgs.lib.nixosSystem {
-  #       system = "x86_64-linux";
-  #       specialArgs = { inherit inputs; };
-  #       modules = [
-  #         disko.nixosModules.disko
-  #         inputs.nix-minecraft.nixosModules.minecraft-servers
-  #         ./configuration.nix
-  #         ./hardware-configuration.nix
-  #       ];
-  #     };
-  #   };
 }

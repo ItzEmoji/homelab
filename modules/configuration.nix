@@ -10,6 +10,7 @@
       self.nixosModules.nix-config
       self.nixosModules.grub
       self.nixosModules.minecraft
+      self.nixosModules.git
       inputs.nixos-dotfiles.nixosModules.tailscale
       inputs.nixos-dotfiles.nixosModules.ssh-server
       self.nixosModules.packages
